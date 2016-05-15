@@ -10,7 +10,8 @@ import {
   WORKER_APP_APPLICATION,
   WORKER_APP_ROUTER
 } from 'angular2/platform/worker_app';
-import { APP_BASE_HREF, Router } from 'angular2/router';
+import { APP_BASE_HREF } from 'angular2/platform/common';
+import { Router } from 'angular2/router';
 import { App } from './app/app';
 
 platform(WORKER_APP_PLATFORM).asyncApplication(() => Promise.resolve([
