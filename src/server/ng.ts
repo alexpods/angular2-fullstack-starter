@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { provide } from 'angular2/core';
-import { PlatformLocation, APP_BASE_HREF, ROUTER_PROVIDERS } from 'angular2/router';
+import { PlatformLocation, APP_BASE_HREF } from 'angular2/platform/common';
+import { ROUTER_PROVIDERS } from 'angular2/router';
 import {
   REQUEST_URL,
   NODE_LOCATION_PROVIDERS,
