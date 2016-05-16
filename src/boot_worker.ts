@@ -4,10 +4,10 @@ import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import 'zone.js/dist/long-stack-trace-zone';
 
-import { platform, provide } from 'angular2/core';
+import { createPlatform, ReflectiveInjector, provide } from 'angular2/core';
 import {
   WebWorkerInstance,
-  WORKER_RENDER_APP,
+  WORKER_RENDER_APPLICATION,
   WORKER_RENDER_PLATFORM,
   WORKER_SCRIPT,
   WORKER_RENDER_ROUTER
@@ -35,11 +35,11 @@ const workerScriptUrl = URL.createObjectURL(new Blob([`
     type: 'text/javascript'
 }));
 
-const appRef = platform(WORKER_RENDER_PLATFORM).application([
-  WORKER_RENDER_APP,
+const appRef = createPlatform(ReflectiveInjector.resolveAndCreate([WORKER_RENDER_PLATFORM,
+  WORKER_RENDER_APPLICATION,
   WORKER_RENDER_ROUTER,
   provide(WORKER_SCRIPT, { useValue: workerScriptUrl })
-]);
+]));
 
 const worker = appRef.injector.get(WebWorkerInstance).worker;
 
