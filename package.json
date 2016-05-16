@@ -45,14 +45,14 @@
     "npm": ">= 3"
   },
   "dependencies": {
-    "angular2": "2.0.0-beta.15",
-    "angular2-universal": "0.98.1",
+    "angular2": "2.0.0-beta.16",
+    "angular2-universal": "0.99.0",
     "css": "^2.2.1",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.35.0",
     "express": "^4.13.3",
     "parse5": "^1.5.1",
-    "preboot": "~1.1.0",
+    "preboot": "2.0.10",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "serve-static": "^1.10.2",
