@@ -8,7 +8,7 @@
 [![Join the chat at https://gitter.im/alexpods/angular2-universal-starter](https://badges.gitter.im/alexpods/angular2-universal-starter.svg)](https://gitter.im/alexpods/angular2-universal-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-#What we've got here
+# What we've got here
 
 - [Server Side rendering](https://angularu.com/VideoSession/2015sf/angular-2-server-rendering) for instant page loading
 - Entire Angular2 application is running in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) (UI always will be smooth)
@@ -23,12 +23,12 @@
 - Unit testing with [Karma](http://karma-runner.github.io/)
 - End-to-End testing with [Protractor](https://angular.github.io/protractor)
 
-##Requirements
+## Requirements
 
 - **`node`** >= **4.2.0**
 - **`npm`** >= **3.0.0**
 
-#Quick start
+# Quick start
 ```bash
 # clone the repo without git history
 git clone --depth 1 https://github.com/alexpods/angular2-universal-starter.git
@@ -65,7 +65,7 @@ npm run dev
 The development server will watch for any changes, make rebuilds and reload a browser. All built code will be kept in 
 memory, so `dist` folder will not be generated (**all** means code for **both** **client** and **server** sides).
 
-##Turning server side rendering and web workers on/off
+## Turning server side rendering and web workers on/off
 You can optionally turn server side rendering or web workers suport on/off. You just need
 to change `HAS_SS` and `HAS_WW` in `constants.js` [here](https://github.com/alexpods/angular2-universal-starter/blob/master/constants.js#L14):
 
@@ -93,7 +93,7 @@ npm restart
 npm run dev
 ```
 
-#Building
+# Building
 ```bash
 # build the project
 npm run build
@@ -102,7 +102,7 @@ npm run build
 npm run build:watch
 ```
 
-#Linting
+# Linting
 ```bash
 # check the project (source files)
 npm run lint
@@ -112,7 +112,7 @@ npm run lint:watch
 ```
 If you're not agree with the default rules ([`tslint.json`](https://github.com/alexpods/angular2-universal-starter/blob/master/tslint.json)), feel free to tell me about it.
 
-#Testing
+# Testing
 The next command will run both unit and end-to-end tests.
 
 For end-to-end tests you need to start Selenium Server first (see [End-to-End Testing](#end-to-end-testing)).
@@ -121,7 +121,7 @@ For end-to-end tests you need to start Selenium Server first (see [End-to-End Te
 npm test
 ```
 
-##Unit Testing
+## Unit Testing
 ```bash
 # run unit tests (single run)
 npm run unit
@@ -137,7 +137,7 @@ npm run unit src/app
 npm run unit:watch src/app/home.spec.ts
 ```
 
-##End-to-End Testing
+## End-to-End Testing
 For end-to-end tests you nedd to start Selenium Server (webdriver) first.
 ```bash
 # start Selenium Server (webdriver)
@@ -147,7 +147,7 @@ npm run webdriver:start
 npm run e2e
 ```
 
-#Cleaning
+# Cleaning
 ```bash
 # remove "dist" and "logs" folders
 npm run clean
@@ -159,7 +159,7 @@ npm run clean:dist
 npm run clean:logs
 ```
 
-#License
+# License
 The MIT License (MIT)
 
 Copyright (c) 2016 Aleksey Podskrebyshev
